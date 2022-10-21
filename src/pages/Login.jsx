@@ -10,9 +10,6 @@ import InformacionBasica from "../containers/InformacionBasica";
 import InformacionEscolar from "../containers/InformacionEscolar";
 import InformacionContacto from "../containers/InformacionContacto";
 
-// IMAGENES
-import bgLogin from "../assets/images/—Pngtree—hand drawn flying dreams kids_1035342.jpg";
-
 function Login() {
   const [page, setPage] = useState(0);
 
@@ -80,7 +77,11 @@ function Login() {
   return (
     <div className="login">
       <div className="image__login">
-        <img src={bgLogin} alt="" width="150%" />
+        <img
+          src="https://data.whicdn.com/images/149799261/original.jpg"
+          alt=""
+          width="150%"
+        />
       </div>
       <div className="form__login">
         <h2 className="form__login__title">Formulario de registro</h2>

@@ -6,20 +6,22 @@ import NotFound from "../pages/NotFound";
 import Login from "../pages/Login";
 import Registro from "../containers/Registro";
 import "../styles/global.scss";
+import AppContext from "../context/AppContext";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Layout>
+      <AppContext.Provider>
+        <BrowserRouter>
           <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/login" element={<Login />} />
-            <Route exact path="/registro" element={<Registro />} />
-            <Route exact path="*" element={<NotFound />} />
+            <Route path="/" element={<Layout />}>
+              <Route path="/" element={<Home />} />
+              <Route path="*" element={<Home />} />
+            </Route>
+            <Route path="/login" element={<Login />} />
           </Routes>
-        </Layout>
-      </BrowserRouter>
+        </BrowserRouter>
+      </AppContext.Provider>
     </>
   );
 }

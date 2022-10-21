@@ -1,7 +1,12 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 
-function Layout({ children }) {
-  return <div className="layout">{children}</div>;
+function Layout() {
+  return (
+    <div>
+      <Outlet />
+    </div>
+  );
 }
 
 export default Layout;
