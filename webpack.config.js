@@ -18,7 +18,7 @@ module.exports = {
       "@pages": path.resolve(__dirname, "src/pages"),
 
       "@styles": path.resolve(__dirname, "src/styles"),
-      
+
       "@icons": path.resolve(__dirname, "src/assets/icon"),
       "@logos": path.resolve(__dirname, "src/assets/logos"),
       "@images": path.resolve(__dirname, "src/assets/images"),
@@ -46,9 +46,9 @@ module.exports = {
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
-				test: /\.(png|svg|jpg|gif)$/,
-				type: 'asset'
-			},
+        test: /\.(png|svg|jpg|gif)$/,
+        type: "asset",
+      },
     ],
   },
   plugins: [
@@ -63,4 +63,5 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
   },
+  performance: { hints: false },
 };
