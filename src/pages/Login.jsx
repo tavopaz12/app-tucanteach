@@ -6,9 +6,9 @@ import "../styles/Login/ButtonLogin.scss";
 import "../styles/Login/Login.scss";
 
 // CONTENDEDORES
-import InformacionBasica from "../containers/Login/InformacionBasica";
-import InformacionEscolar from "../containers/Login/InformacionEscolar";
-import InformacionContacto from "../containers/Login/InformacionContacto";
+import InformacionBasica from "../containers/InformacionBasica";
+import InformacionEscolar from "../containers/InformacionEscolar";
+import InformacionContacto from "../containers/InformacionContacto";
 
 // IMAGENES
 import bgLogin from "../assets/images/—Pngtree—hand drawn flying dreams kids_1035342.jpg";

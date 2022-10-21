@@ -1,10 +1,10 @@
 import React from "react";
 
 // // ----------------------------------------
-import InputLogin from "../../components/Login/inputLogin";
-import ButtonLoginPrev from "../../components/Login/ButtonLoginPrev";
-import InputSelect from "../../components/Login/InputSelect";
-import ButtonLoginNextIE from "../../components/Login/ButtonLoginNextIE";
+import InputLogin from "../components/Login/inputLogin";
+import ButtonLoginPrev from "../components/Login/ButtonLoginPrev";
+import InputSelect from "../components/Login/InputSelect";
+import ButtonLoginNextIE from "../components/Login/ButtonLoginNextIE";
 
 // // ----------------------------------------
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

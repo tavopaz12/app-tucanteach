@@ -1,11 +1,11 @@
 import React from "react";
 
 // // ----------------------------------------
-import ButtonLoginPrev from "../../components/Login/ButtonLoginPrev";
-import InputLogin from "../../components/Login/inputLogin";
-import InputEmail from "../../components/Login/InputEmail";
-import InputPassword from "../../components/Login/InputPassword";
-import BtnSendForm from "../../components/Login/BtnSendForm";
+import ButtonLoginPrev from "../components/Login/ButtonLoginPrev";
+import InputLogin from "../components/Login/inputLogin";
+import InputEmail from "../components/Login/InputEmail";
+import InputPassword from "../components/Login/InputPassword";
+import BtnSendForm from "../components/Login/BtnSendForm";
 
 // // ----------------------------------------
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
