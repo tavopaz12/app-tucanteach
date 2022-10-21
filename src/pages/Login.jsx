@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 // ESTILOS
-import "@styles/Login/Login.scss";
-import "@styles/Login/InputLogin.scss";
-import "@styles/Login/ButtonLogin.scss";
-import "@styles/Login/Login.scss";
+import "../styles/Login/Login.scss";
+import "../styles/Login/InputLogin.scss";
+import "../styles/Login/ButtonLogin.scss";
+import "../styles/Login/Login.scss";
 
 // CONTENDEDORES
-import InformacionBasica from "@containers/Login/InformacionBasica";
-import InformacionEscolar from "@containers/Login/InformacionEscolar";
-import InformacionContacto from "@containers/Login/InformacionContacto";
+import InformacionBasica from "../containers/Login/InformacionBasica";
+import InformacionEscolar from "../containers/Login/InformacionEscolar";
+import InformacionContacto from "../containers/Login/InformacionContacto";
 
 // IMAGENES
-import bgLogin from "@images/—Pngtree—hand drawn flying dreams kids_1035342.jpg";
+import bgLogin from "../assets/images/—Pngtree—hand drawn flying dreams kids_1035342.jpg";
 
 function Login() {
   const [page, setPage] = useState(0);
