@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/Login/InputSelect.scss";
+import "../styles/Login/InputSelect.scss";
 
 function InputSelect({ titleLabel, options, icon, onChange, nameValue }) {
   return (
