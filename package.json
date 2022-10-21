@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack server --open",
-    "build": "webpack --node production"
+    "build": "webpack --mode production"
   },
   "keywords": [
     "js",
