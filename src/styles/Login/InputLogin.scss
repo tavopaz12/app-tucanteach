@@ -1,0 +1,32 @@
+.field {
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.field__title {
+  font-size: 1.1rem;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: white;
+}
+
+.field__input {
+  width: 80%;
+  border: none;
+  color: white;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  padding: 10px 0px 10px 30px;
+  font-size: 1rem;
+  outline: none;
+  background-color: transparent;
+}
+
+.svg-inline--fa {
+  color: var(--dark-primary-color);
+  color: white;
+  position: relative;
+  width: 20px;
+  top: 0.01rem;
+  transform: translateX(1.5rem);
+}

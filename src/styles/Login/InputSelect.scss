@@ -1,0 +1,38 @@
+.content-input input,
+.content-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Eliminamos la fecha que por defecto aparece en el desplegable */
+.content-select select::-ms-expand {
+  display: none;
+}
+
+.content-select {
+  width: 100%;
+  position: relative;
+  text-align: left;
+}
+
+.content-select select {
+  width: 86%;
+  padding: 10px 0px 10px 30px;
+  font-size: 1rem;
+  display: inline-block;
+  cursor: pointer;
+  height: 2.5rem;
+  outline: none;
+  border: 0;
+  background: transparent;
+  color: white;
+  border-bottom: 1px solid white;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.content-select option {
+  color: black;
+}
+
