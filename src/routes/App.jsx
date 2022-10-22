@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import Layout from "../containers/Layout";
 import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
@@ -11,16 +11,16 @@ import AppContext from "../context/AppContext";
 function App() {
   return (
     <>
-      <AppContext.Provider>
-        <BrowserRouter>
+      <AppContext.Provider value={<Home></Home>}>
+        <HashRouter>
           <Routes>
             <Route path="/" element={<Layout />}>
-              <Route path="/" element={<Home />} />
-              <Route path="*" element={<Home />} />
+              <Route index path="/" element={<Home />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="*" element={<NotFound />} />
             </Route>
-            <Route path="/login" element={<Login />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </AppContext.Provider>
     </>
   );
