@@ -1,0 +1,21 @@
+@import "./vars";
+
+body {
+  .bg__home {
+    background-image: var(--bg-home);
+    height: 100vh;
+    position: sticky;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+  }
+
+  .home__container {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    position: fixed;
+  }
+}

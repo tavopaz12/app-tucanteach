@@ -21,7 +21,7 @@ function InformacionContacto({
 }) {
   return (
     <>
-      <h2 className="title__category">Informacion Contacto</h2>
+      {/* <h2 className="title__category">Informacion Contacto</h2> */}
       <br />
 
       <InputEmail
@@ -58,7 +58,7 @@ function InformacionContacto({
       />
 
       <ButtonLoginPrev page={page} setPage={setPage} />
-      <BtnSendForm formData={formData} errors={errors} />
+      <BtnSendForm formData={formData} errors={errors} titleBtn={'Registrar'}/>
     </>
   );
 }

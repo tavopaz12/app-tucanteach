@@ -18,7 +18,7 @@ import {
 function InformacionEscolar({ page, setPage, formData, setFormData }) {
   return (
     <>
-      <h2 className="title__category">Informacion Escolar</h2>
+      {/* <h2 className="title__category">Informacion Escolar</h2> */}
 
       <InputSelect
         titleLabel={

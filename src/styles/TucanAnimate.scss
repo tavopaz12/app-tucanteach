@@ -1,0 +1,76 @@
+.bird-container {
+  display: none;
+}
+
+.bird--one {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .bird {
+    background-image: url(https://images.vexels.com/media/users/3/232975/isolated/lists/e1107cce16428b1577cb3a452b0ab279-trazo-de-color-tuc-n-volando-feliz.png);
+    background-size: auto 100%;
+    width: 150px;
+    height: 150px;
+    will-change: background-position;
+    animation-name: fly-cycle;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+  }
+
+  .bird--one {
+    animation-duration: 5s;
+    display: block;
+    animation-delay: -0.5s;
+  }
+
+  .bird-container {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: -10%;
+    transform: scale(0) translateX(10vw);
+    will-change: transform;
+    animation-name: fly-right-one;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  .bird-container--one {
+    animation-duration: 15s;
+    animation-delay: 0;
+  }
+
+  @keyframes fly-cycle {
+    100% {
+      background-position: -3600px 0;
+    }
+  }
+
+  @keyframes fly-right-one {
+    100% {
+      transform: translateY(4vh) scale(0.4) translateX(-85vw);
+    }
+    60% {
+      transform: translateY(0vh) translateX(15vw) scale(0.6);
+    }
+    50% {
+      transform: translateY(4vh) translateX(35vw) scale(0.6);
+    }
+    40% {
+      transform: translateY(0vh) translateX(45vw) scale(0.6);
+    }
+    30% {
+      transform: translateY(4vh) translateX(55vw) scale(0.6);
+    }
+    20% {
+      transform: translateY(0vh) translateX(65vw) scale(0.6);
+    }
+    10% {
+      transform: translateY(4vh) translateX(75vw) scale(0.6);
+    }
+    0% {
+      transform: translateY(0vh) translateX(85vw) scale(0.6);
+    }
+  }
+}

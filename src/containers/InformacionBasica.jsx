@@ -12,7 +12,7 @@ import {
 function InformacionBasica({ page, setPage, formData, setFormData }) {
   return (
     <>
-      <h2 className="title__category">Informacion Basica</h2>
+      {/* <h2 className="title__category">Informacion Basica</h2> */}
 
       <br />
 

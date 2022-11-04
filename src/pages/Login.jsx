@@ -1,18 +1,12 @@
 import React, { useState } from "react";
-// ESTILOS
-import "../styles/Login/Login.scss";
-import "../styles/Login/InputLogin.scss";
-import "../styles/Login/ButtonLogin.scss";
-import "../styles/Login/Login.scss";
-
-// CONTENDEDORES
-import InformacionBasica from "../containers/InformacionBasica";
-import InformacionEscolar from "../containers/InformacionEscolar";
-import InformacionContacto from "../containers/InformacionContacto";
+import { NavLink } from "react-router-dom";
+import BtnSendForm from "../components/BtnSendForm";
+import InputEmail from "../components/InputEmail";
+import InputPassword from "../components/InputPassword";
+import "../styles/Login/BtnTucan.scss";
+import "../styles/TucanAnimate.scss";
 
 function Login() {
-  const [page, setPage] = useState(0);
-
   const [errors, setErrors] = useState({
     email: {
       err: false,
@@ -28,51 +22,16 @@ function Login() {
     },
   });
 
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+
   const onSubmit = (e) => {
     e.preventDefault();
 
     console.log(formData);
   };
-
-  const [formData, setFormData] = useState({
-    fullName: "",
-    lastName: "",
-    nickname: "",
-
-    nivelSchool: "",
-    nameSchool: "",
-    gradeSchool: "",
-    ubicacionSchool: "",
-
-    email: "",
-    password: "",
-    cellPhone: "",
-  });
-
-  const componentList = [
-    <InformacionBasica
-      page={page}
-      setPage={setPage}
-      formData={formData}
-      setFormData={setFormData}
-    />,
-
-    <InformacionEscolar
-      page={page}
-      setPage={setPage}
-      formData={formData}
-      setFormData={setFormData}
-    />,
-
-    <InformacionContacto
-      page={page}
-      setPage={setPage}
-      formData={formData}
-      setFormData={setFormData}
-      setErrors={setErrors}
-      errors={errors}
-    />,
-  ];
 
   return (
     <div className="login">
@@ -84,57 +43,53 @@ function Login() {
         />
       </div>
       <div className="form__login">
-        <h2 className="form__login__title">Formulario de registro</h2>
-        <div className="steps">
-          <p
-            style={{
-              textDecoration:
-                page === 0
-                  ? "none"
-                  : page === 1
-                  ? "line-through #1c3d36 3px"
-                  : page === 2
-                  ? "line-through #1c3d36 3px"
-                  : "none",
-            }}
-          >
-            Personal
-          </p>
+        <h2 className="form__login__title">Bienvenido</h2>
 
-          <p
-            style={{
-              textDecoration:
-                page === 0
-                  ? "none"
-                  : page === 1
-                  ? "none"
-                  : page === 2
-                  ? "line-through #1c3d36 3px"
-                  : "none",
-            }}
-          >
-            Escolar
-          </p>
+        <div className="bird-container bird-container--one">
+          <div className="bird bird--one"></div>
+        </div>
 
-          <p>Contacto</p>
-        </div>
-        <div className="progress-bar">
-          <div
-            style={{
-              width:
-                page === 0
-                  ? "33%"
-                  : page === 1
-                  ? "66%"
-                  : page === 2
-                  ? "100%"
-                  : "100%",
-            }}
-          ></div>
-        </div>
+        <br></br>
         <form action="" onSubmit={onSubmit}>
-          <div>{componentList[page]}</div>
+          <InputEmail
+            formData={formData}
+            setFormData={setFormData}
+            errors={errors}
+            setErrors={setErrors}
+            pattern={
+              "[a-zA-Z0-9!#$%&'*_+-]([.]?[a-zA-Z0-9!#$%&'*_+-])+@[a-zA-Z0-9]([^@&%$/()=?¿!.,:;]|d)+[a-zA-Z0-9][.][a-zA-Z]{2,4}([.][a-zA-Z]{2})?"
+            }
+            title={"Introduce un correo valido"}
+          />
+          <br />
+
+          <InputPassword
+            formData={formData}
+            setFormData={setFormData}
+            errors={errors}
+            setErrors={setErrors}
+            maxlength={"12"}
+          />
+          <br />
+          <center>
+            <BtnSendForm
+              formData={formData}
+              errors={errors}
+              titleBtn={"Login"}
+            />
+          </center>
         </form>
+        <br />
+        <hr />
+        <br />
+        <div>
+          <p href="" className="create__account">
+            Aun no tengo una cuenta!{" "}
+            <NavLink to="/registro" className="create__account--link">
+              Registrarme!
+            </NavLink>
+          </p>
+        </div>
       </div>
     </div>
   );

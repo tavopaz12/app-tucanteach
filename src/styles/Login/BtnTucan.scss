@@ -1,0 +1,29 @@
+.create__account {
+  color: white;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+}
+
+.create__account--link {
+  color: beige;
+  background-color: #5b942a;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+}
+
+.create__account--link:hover {
+  background-color: #2f5f05;
+}
+
+@media screen and (max-width: 700px) {
+  .create__account {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .create__account--link {
+    margin-left: 0.1rem;
+  }
+  
+}

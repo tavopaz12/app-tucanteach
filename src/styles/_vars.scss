@@ -1,23 +1,46 @@
 // VARIABLES
-:root{
+html {
+  --bg-home: url("https://i.postimg.cc/bJv8r3C5/tavi1.jpg");
   /* BACKGROUNDS */
   --dark-primary-color: #165305;
-  --default-primary-color: #4CAF50;
+  --default-primary-color: #4caf50;
   --light-primary-color: #93842f;
-  --text-primary-color: #FFFFFF;
-  --accent-color: #4CAF50;
-  
+  --bg-light: rgb(255, 255, 255);
+  --hospital-green: #acd9b2;
+
   /* COLORS */
-  --primary-text-color: #212121; 
+  --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --divider-color: #ffa739;
+  --text-primary-color: #000000;
+  --accent-color: #4caf50;
 
   --button-primary: #77af63;
   --button-secondary: #7a9f6c;
   --bg-principal: #6fdf46;
   --bg-secondary: #75bf59;
   --bg-green: #72cf50;
-  --bg-light: rgb(255, 255, 255);
-  --hospital-green: #acd9b2;
+}
 
+html[data-theme="dark"] {
+  --bg-home: url("https://i.postimg.cc/d0wJPq8w/tavi2.jpg");
+  /* BACKGROUNDS */
+  --dark-primary-color: #165305;
+  --default-primary-color: #4caf50;
+  --light-primary-color: #93842f;
+  --hospital-green: #1e4624;
+  --bg-light: rgb(49, 46, 46);
+
+  /* COLORS */
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #757575;
+  --divider-color: #ffa739;
+  --text-primary-color: #ffffff;
+  --accent-color: #4caf50;
+
+  --button-primary: #77af63;
+  --button-secondary: #7a9f6c;
+  --bg-principal: #6fdf46;
+  --bg-secondary: #75bf59;
+  --bg-green: #72cf50;
 }

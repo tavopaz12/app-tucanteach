@@ -1,0 +1,33 @@
+@import "./vars";
+
+.container__user {
+  display: flex;
+  align-items: center;
+  background-color: var(--hospital-green);
+  width: 15rem;
+  height: 3rem;
+  padding: 0.2rem;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+.container__user__img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.container__user__name {
+  margin-left: 0.3rem;
+  color: var(--text-primary-color);
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 700px) {
+  .container__user__name {
+    display: none;
+  }
+  .container__user {
+    width: 3.1rem;
+    background-color: rgba(255, 255, 255, 0.411);
+  }
+}

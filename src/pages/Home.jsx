@@ -1,11 +1,18 @@
 import React from "react";
-import Header from "../components/header";
+import SectionClass from "../containers/SectionClass";
+import "../styles/Home.scss";
+import Header from "../containers/Header";
 
 function Home() {
   return (
     <>
-      <p>Bienvenidos</p>
-      <Header></Header>
+      <div className="bg__home"></div>
+
+      <div className="home__container">
+        <Header></Header>
+
+        <SectionClass></SectionClass>
+      </div>
     </>
   );
 }
