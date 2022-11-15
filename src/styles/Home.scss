@@ -1,21 +1,41 @@
 @import "./vars";
 
-body {
-  .bg__home {
-    background-image: var(--bg-home);
-    height: 100vh;
-    position: sticky;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 0;
-  }
+.bg__home {
+  background-image: var(--bg-home);
+  height: 100vh;
+  position: sticky;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+}
 
+.home__container {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  position: fixed;
+}
+
+.cards__container {
+  display: flex;
+  justify-content: space-between;
+  // margin-top: 5.3rem;
+}
+
+@media screen and (max-width: 700px) {
+  .cards__container {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .bg__home {
+    height: 150vh;
+  }
+  
   .home__container {
-    z-index: 1;
     position: absolute;
-    top: 0;
-    height: 100vh;
-    position: fixed;
+    height: 150vh;
   }
 }

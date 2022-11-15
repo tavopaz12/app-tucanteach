@@ -5,26 +5,28 @@
 
 .field__title {
   font-size: 1.1rem;
+  font-family: var(--font-dmSans);
   text-align: left;
   margin-bottom: 0.5rem;
   font-weight: 500;
-  color: white;
+  color: var(--light-text-color);
 }
 
 .field__input {
   width: 80%;
   border: none;
-  color: white;
+  color: var(--light-text-color);
   border-bottom: 1px solid rgb(255, 255, 255);
   padding: 10px 0px 10px 30px;
-  font-size: 1rem;
+  font-size: 1.15rem;
   outline: none;
   background-color: transparent;
+  font-family: var(--font-secondary);
 }
 
 .svg-inline--fa {
-  color: var(--dark-primary-color);
-  color: white;
+  color: var(--light-text-color);
+  color: var(--light-text-color);
   position: relative;
   width: 20px;
   top: 0.01rem;

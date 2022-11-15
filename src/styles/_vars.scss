@@ -1,46 +1,101 @@
 // VARIABLES
 html {
-  --bg-home: url("https://i.postimg.cc/bJv8r3C5/tavi1.jpg");
+  --bg-home: url("https://i.imgur.com/Y3ygvWl.jpeg");
+  --bg-img-sesions: url("https://i.imgur.com/Y3ygvWl.jpeg");
+
+  /* FONTS */
+  /* TITULOS */
+  --font-skranji: "Skranji", cursive;
+  --font-secularOne: "Secular One", sans-serif;
+  --font-handlee: "Handlee", cursive;
+
+  /*SUBTITULOS*/
+  --font-secondary: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --font-dmSans: "DM Sans", sans-serif;
+
+  /* TEMA CLARO */
+
   /* BACKGROUNDS */
-  --dark-primary-color: #165305;
-  --default-primary-color: #4caf50;
-  --light-primary-color: #93842f;
-  --bg-light: rgb(255, 255, 255);
-  --hospital-green: #acd9b2;
+  --main-color-blue: linear-gradient(
+    45deg,
+    rgb(167, 154, 11) 39%,
+    rgb(245, 243, 132) 100%
+  );
+  --main-color-green: #1c3d36;
+  --body-color: #fbfbfe;
+  --hospital-green: #94820d;
+  --bg-sesions: white;
+  --bg-card-dark: white;
 
-  /* COLORS */
-  --primary-text-color: #212121;
-  --secondary-text-color: #757575;
-  --divider-color: #ffa739;
-  --text-primary-color: #000000;
+  /* TITLE */
+  --title-color: #333;
+  --title-color-green: #1ca334;
+  --text-color-secondary: #707070;
+  --light-text-color: #ffffff;
+  --dark-text-color: black;
+
+  /* EXTRAS */
+  --btn-yellow: #ffa739;
   --accent-color: #4caf50;
+  --btn-green: #5b942a;
+  --btn-green-hover: #2f5f05;
+  --bg-color-icon: #a4ddcf;
+  --bg-btn-hover: #c8cacf;
 
-  --button-primary: #77af63;
-  --button-secondary: #7a9f6c;
-  --bg-principal: #6fdf46;
-  --bg-secondary: #75bf59;
-  --bg-green: #72cf50;
+  /* #008f6f
+   #1ca381
+   --dark-primary-color: #165305;
+  */
 }
 
 html[data-theme="dark"] {
-  --bg-home: url("https://i.postimg.cc/d0wJPq8w/tavi2.jpg");
+  --bg-home: url("https://i.postimg.cc/zG4QmpKN/t2.jpg");
+  --bg-img-sesions: url("https://i.postimg.cc/yYdgmLM7/12-Z-2102-w026-n002-148-B-p1-148.jpg");
+
+  /* TEMA OSCURO */
+
   /* BACKGROUNDS */
-  --dark-primary-color: #165305;
-  --default-primary-color: #4caf50;
-  --light-primary-color: #93842f;
-  --hospital-green: #1e4624;
-  --bg-light: rgb(49, 46, 46);
+  --main-color-blue: linear-gradient(
+    45deg,
+    rgb(21, 21, 153) 39%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  --main-color-green: #1c3d36;
+  --body-color: #031742;
+  --hospital-green: #031742;
+  --bg-sesions: rgb(19, 18, 18);
+  --bg-card-dark: black;
 
-  /* COLORS */
-  --primary-text-color: #ffffff;
-  --secondary-text-color: #757575;
-  --divider-color: #ffa739;
-  --text-primary-color: #ffffff;
+  /* TITLE */
+  --title-color: white;
+  --title-color-green: #1ca334;
+  --text-color-secondary: #afb6b6;
+  --light-text-color: #ffffff;
+  --dark-text-color: rgb(255, 255, 255);
+
+  /* EXTRAS */
+  --btn-yellow: #ffa739;
   --accent-color: #4caf50;
+  --btn-green: #5b942a;
+  --btn-green-hover: #2f5f05;
+  --bg-color-icon: transparent;
+  --bg-btn-hover: #265df2;
 
-  --button-primary: #77af63;
-  --button-secondary: #7a9f6c;
-  --bg-principal: #6fdf46;
-  --bg-secondary: #75bf59;
-  --bg-green: #72cf50;
+  /* #008f6f
+   #1ca381
+   --dark-primary-color: #165305;
+  */
 }
+
+/* FONTS */
+/*
+font-family: 'DM Sans', sans-serif;
+font-family: 'Handlee', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'Leckerli One', cursive;
+font-family: 'Merienda One', cursive;
+font-family: 'Secular One', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Skranji', cursive;
+*/

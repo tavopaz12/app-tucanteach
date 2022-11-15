@@ -1,0 +1,14 @@
+.menuToggle__container {
+  align-items: center;
+  background-color: var(--hospital-green);
+  width: 4rem;
+  height: 3rem;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+.menuToggle__icon {
+  margin: 0.6rem 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+}

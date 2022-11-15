@@ -23,7 +23,7 @@
 }
 
 .form__login {
-  background-color: #1c3d36;
+  background-color: var(--main-color-green);
   border-left: solid 1px rgb(4, 80, 4);
   width: 40%;
   padding: 2rem;
@@ -33,15 +33,16 @@
 .form__login__title {
   font-size: 1.8rem;
   font-weight: 900;
+  font-family: var(--font-secularOne);
   text-align: center;
-  color: white;
+  color: var(--light-text-color);
   margin-bottom: 2rem;
 }
 
 .progress-bar {
   width: 100%;
   height: 15px;
-  background-color: white;
+  background-color: var(--body-color);
   margin-bottom: 30px;
 }
 .progress-bar div {
@@ -55,7 +56,7 @@
   text-decoration: underline;
   font-weight: bold;
   font-size: 1.3rem;
-  color: white;
+  color: var(--light-text-color);
   margin-bottom: 1rem;
 }
 
@@ -80,7 +81,6 @@
   }
 
   .form__login {
-    background-color: #1c3d36;
     border-left: none;
     width: auto;
     padding: auto;
@@ -91,20 +91,17 @@
     font-size: 1.7rem;
     font-weight: 900;
     text-align: center;
-    color: white;
     margin-bottom: 2rem;
   }
 
   .progress-bar {
     width: 100%;
     height: 15px;
-    background-color: white;
     margin-bottom: 30px;
   }
   .progress-bar div {
     width: 25%;
     height: 100%;
-    background-color: #5b942a;
   }
 
   .title__category {
@@ -112,7 +109,6 @@
     text-decoration: underline;
     font-weight: bold;
     font-size: 1.3rem;
-    color: white;
     margin-bottom: 1rem;
   }
 }

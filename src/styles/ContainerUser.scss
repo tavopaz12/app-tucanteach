@@ -18,8 +18,10 @@
 
 .container__user__name {
   margin-left: 0.3rem;
-  color: var(--text-primary-color);
-  font-weight: bolder;
+  color: white;
+  font-weight: 900;
+  font-family:var(--font-handlee);
+  letter-spacing: 0.08rem;
 }
 
 @media screen and (max-width: 700px) {
@@ -28,6 +30,6 @@
   }
   .container__user {
     width: 3.1rem;
-    background-color: rgba(255, 255, 255, 0.411);
+    background-color: rgba(255, 255, 255, 0.048);
   }
 }

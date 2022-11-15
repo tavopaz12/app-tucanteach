@@ -6,10 +6,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/ContainerTools.scss";
 
 function ContainerTools() {
-  
   const [checked, setChecked] = useState(
     localStorage.getItem("theme") === "dark" ? true : false
   );
@@ -33,7 +33,9 @@ function ContainerTools() {
   return (
     <div className="container__tools">
       <div className="container__tools__icon">
-        <FontAwesomeIcon icon={faHome} />
+        <Link to="/" className="link">
+          <FontAwesomeIcon icon={faHome} />
+        </Link>
         <FontAwesomeIcon icon={faGear} />
         <div className="container-switch">
           <div className="icon">

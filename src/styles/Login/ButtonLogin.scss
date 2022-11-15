@@ -1,19 +1,20 @@
 .button__login {
   width: 40%;
   border: none;
-  background: #5b942a;
+  background: var(--btn-green);
   border-radius: 5px;
   color: #fff;
   padding: 0.6rem;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: 0.5s ease;
   margin-left: 5%;
+  font-family: var(--font-dmSans);
 }
 
 .button__login:hover{
-  background-color: #2f5f05;
+  background-color: var(--btn-green-hover);
 }

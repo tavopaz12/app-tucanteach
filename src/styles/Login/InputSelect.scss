@@ -26,13 +26,14 @@
   outline: none;
   border: 0;
   background: transparent;
-  color: white;
+  color: var(--light-text-color);
   border-bottom: 1px solid white;
   position: relative;
   transition: all 0.25s ease;
 }
 
 .content-select option {
-  color: black;
+  font-weight: 500;
+  color: var(--dark-text-color);
 }
 

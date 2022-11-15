@@ -1,0 +1,114 @@
+@import "./vars.scss";
+
+.card {
+  border-radius: 25px;
+  background-color: var(--bg-card-dark);
+  margin-bottom: 2rem;
+  width: 30%;
+  border: 2px solid var(--text-color-secondary);
+}
+
+.card__image-content,
+.card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.card__image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+.card__overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--hospital-green);
+  border-radius: 25px 25px 0 25px;
+}
+.card__overlay::before,
+.card__overlay::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: var(--hospital-green);
+}
+.card__overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: var(--bg-card-dark);
+}
+
+.card-image {
+  position: relative;
+  height: 150px;
+  border-radius: 2rem;
+  width: 250px;
+  background: #fff;
+  padding: 1px;
+  // border: 2px solid white;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+}
+ 
+.card__content__name {
+  font-size: 1.3rem;
+  font-family: var();
+  font-weight: 500;
+  color: var(--title-color);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: var(--font-secularOne);
+}
+.card__content__description {
+  font-size: 0.97rem;
+  color: var(--text-color-secondary);
+  font-family: var(--font-dmSans);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card__button {
+  border: none;
+  font-size: 16px;
+  color: var(--dark-text-color);
+  padding: 8px 16px;
+  background-color: var(--body-color);
+  border: 0.18rem solid black;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: var(--font-secondary);
+}
+.card__button:hover {
+  background: var(--bg-btn-hover);
+}
+
+@media screen and (max-width: 970px) {
+  .card {
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+}
+
+

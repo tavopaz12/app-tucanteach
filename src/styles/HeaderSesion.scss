@@ -1,9 +1,10 @@
-.header {
+.header__session{
   display: flex;
   justify-content: space-between;
-  height: 6rem;
-  width: 98vw;
+  height: 5rem;
+  width: 100%;
   top: 0;
   z-index: 5;
   position: sticky;
+  background-color: var(--hospital-green);
 }

@@ -145,9 +145,9 @@ function SignUp() {
         <br />
         <div>
           <p href="" className="create__account">
-            Ya tengo una cuenta
+            Ya tengo una cuenta!!
             <NavLink to="/login" className="create__account--link">
-              Iniciar Sesión!
+              Iniciar Sesión
             </NavLink>
           </p>
         </div>

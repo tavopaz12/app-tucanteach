@@ -1,0 +1,9 @@
+.conten__sesion__container{
+  display: flex;
+}
+
+@media screen and (max-width: 700px) {
+  .conten__sesion__container{
+    display: block;
+  }
+}
