@@ -12,7 +12,7 @@ function CardSection({ title, description, image, to }) {
       setExpandsImg(false);
     }
   };
- 
+
   return (
     <div className="container__card">
       <div className="wrapper__card">

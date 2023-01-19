@@ -1,15 +1,31 @@
 import { faBook, faBookOpen } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { getActividadesMedioAmbiente } from "../hooks/useDataActividadesMedioAmbiente.jsx";
 import "../styles/TemaContainer.scss";
 
-export default function TemasContainer({ isActive }) {
+export default function TemasContainer({ pos }) {
   let navigate = useNavigate();
+  let location = useLocation();
+
+  const actividades = getActividadesMedioAmbiente();
 
   return (
-    <section className="container__medioAmbiente__temas">
-      <div className="container__medioAmbiente__temas__info">
+    <section
+      className={
+        pos === 0
+          ? "container__medioAmbiente__temas"
+          : "container__medioAmbiente__temas-active"
+      }
+    >
+      <div
+        className={
+          pos === 0
+            ? "container__medioAmbiente__temas__info"
+            : "container__medioAmbiente__temas__info-active"
+        }
+      >
         <button
           onClick={() => {
             navigate("/medio-ambiente");
@@ -43,27 +59,17 @@ export default function TemasContainer({ isActive }) {
 
         <div className="list__temas__medioAmbiente">
           <ol>
-            <li>
-              <span>Tema 1</span>
-            </li>
-            <li>
-              <span>Tema 2</span>
-            </li>
-            <li>
-              <span>Tema 3</span>
-            </li>
-            <li>
-              <span>Tema 4</span>
-            </li>
-            <li>
-              <span>Tema 5</span>
-            </li>
-            <li>
-              <span>Tema 6</span>
-            </li>
-            <li>
-              <span>Tema 7</span>
-            </li>
+            {actividades.map((actividad) => (
+              <Link
+                className="tema__active"
+                to={`tema/${actividad.number}` + location.search}
+                key={actividad.number}
+              >
+                <li>
+                  <span>{actividad.name}</span>
+                </li>
+              </Link>
+            ))}
           </ol>
         </div>
       </div>

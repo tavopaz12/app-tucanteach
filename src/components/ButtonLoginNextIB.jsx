@@ -1,60 +1,61 @@
 import React from "react";
 
 function ButtonLoginNextIB({ page, setPage, formData }) {
-  // // ----------------------------------------
-
   const longitudText = 2;
+
+  let nickNameKey = formData.nickname;
+  let fullNameKey = formData.fullName;
+  let lastNameKey = formData.lastName;
 
   return (
     <>
       <button
         className="button__login"
         onKeyUp={() => {
-          formData.nickname.length <= longitudText
+          nickNameKey.length <= longitudText
             ? ""
-            : formData.fullName.length <= longitudText
+            : fullNameKey.length <= longitudText
             ? ""
-            : formData.lastName.length <= longitudText
+            : lastNameKey.length <= longitudText
             ? ""
             : setPage(page + 1);
         }}
         onClick={() => {
-          formData.fullName.trim() === ""
+          fullNameKey.trim() === ""
             ? ""
-            : formData.lastName.trim() === ""
+            : lastNameKey.trim() === ""
             ? ""
-            : formData.nickname.trim() === ""
+            : nickNameKey.trim() === ""
             ? ""
-            : formData.nickname.length <= longitudText
+            : nickNameKey.length <= longitudText
             ? ""
-            : formData.fullName.length <= longitudText
+            : fullNameKey.length <= longitudText
             ? ""
-            : formData.lastName.length <= longitudText
+            : lastNameKey.length <= longitudText
             ? ""
             : setPage(page + 1);
         }}
-
         style={{
           pointerEvents:
-            formData.nickname.length <= longitudText
+            nickNameKey.length <= longitudText
               ? "none"
-              : formData.fullName.length <= longitudText
+              : fullNameKey.length <= longitudText
               ? "none"
-              : formData.lastName.length <= longitudText
+              : lastNameKey.length <= longitudText
               ? "none"
               : "visible",
 
           backgroundColor:
-            formData.nickname.length <= longitudText
+            nickNameKey.length <= longitudText
               ? "#7a9f6c"
-              : formData.fullName.length <= longitudText
+              : fullNameKey.length <= longitudText
               ? "#7a9f6c"
-              : formData.lastName.length <= longitudText
+              : lastNameKey.length <= longitudText
               ? "#7a9f6c"
               : "",
         }}
       >
-        next
+        Next
       </button>
     </>
   );

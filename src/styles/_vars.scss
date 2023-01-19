@@ -10,7 +10,8 @@ html {
   --font-handlee: "Handlee", cursive;
 
   /*SUBTITULOS*/
-  --font-secondary: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --font-secondary: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   --font-dmSans: "DM Sans", sans-serif;
 
   /* TEMA CLARO */
@@ -31,6 +32,7 @@ html {
   --title-color: #333;
   --title-color-green: #1ca334;
   --text-color-secondary: #707070;
+  --subtitule: #afb6b6;
   --light-text-color: #ffffff;
   --dark-text-color: black;
 
@@ -41,6 +43,15 @@ html {
   --btn-green-hover: #2f5f05;
   --bg-color-icon: #a4ddcf;
   --bg-btn-hover: #c8cacf;
+  --temas-hover: #e4e4e4;
+  --border-color: #afb6b6;
+
+  /* COLOR SLIDE */
+  --bg-color1: #F56701;
+  --bg-color2: #F4D100;
+  --bg-color3: #F3F400;
+  --bg-color4: #91B70C;
+  --bg-color5: #309300;
 
   /* #008f6f
    #1ca381
@@ -70,6 +81,7 @@ html[data-theme="dark"] {
   --title-color: white;
   --title-color-green: #1ca334;
   --text-color-secondary: #afb6b6;
+  --subtitule: rgb(77, 75, 75);
   --light-text-color: #ffffff;
   --dark-text-color: rgb(255, 255, 255);
 
@@ -80,6 +92,15 @@ html[data-theme="dark"] {
   --btn-green-hover: #2f5f05;
   --bg-color-icon: transparent;
   --bg-btn-hover: #265df2;
+  --temas-hover: rgb(44, 43, 43);
+  --border-color: rgb(41, 40, 40);
+
+  /* COLOR SLIDE */
+  --bg-color1: #17277e;
+  --bg-color2: #600171;
+  --bg-color3: #bb0061;
+  --bg-color4: #f5025b;
+  --bg-color5: #F40000;
 
   /* #008f6f
    #1ca381

@@ -1,7 +1,7 @@
 let cursos = [
   {
     name: "Medio Ambiente",
-    number: "f07239d2-e1eb-4cd2-8456-79a70c5130ed",
+    number: "30a8-medio-ambiente",
     amount: "Reconocer los elementos que componen el medio ambiente",
     due: "12/05/1995",
     image:
@@ -64,7 +64,7 @@ let cursos = [
     name: "Contaminacion en la comunidad",
     number: "c4a773e6-6a4d-4a8a-a93c-03c65e3e675d",
     amount:
-      "$Identificar los lugares de la comunidad que presentan algun grado de contaminacion",
+      "Identificar los lugares de la comunidad que presentan algun grado de contaminacion",
     due: "01/27/2998",
   },
 ];

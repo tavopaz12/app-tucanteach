@@ -3,17 +3,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "../styles/MenuToggle.scss";
 
-export default function MenuToogle({setToggleMenu, toggleMenu}) {
-  
+export default function MenuToogle({ setToggleMenu, toggleMenu }) {
   const handleToggleMenu = () => {
     if (toggleMenu === false) {
-      return setToggleMenu(true);
+      setToggleMenu(true);
+      localStorage.setItem("toogle", true);
+      return;
     }
+
     setToggleMenu(false);
+    localStorage.setItem("toogle", false);
   };
   return (
     <div className="menuToggle__container">
-      
       <FontAwesomeIcon
         onClick={() => {
           handleToggleMenu();

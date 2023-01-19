@@ -1,8 +1,6 @@
 import React from "react";
 
 function BtnSendForm({ errors, titleBtn }) {
-  // // ----------------------------------------
-
   const longitudText = 10;
 
   return (

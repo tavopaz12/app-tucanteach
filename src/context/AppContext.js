@@ -1,5 +1,5 @@
-import React from "react";
+import React, { createContext } from "react";
 
-const AppContext = React.createContext({});
+const ToogleContext = createContext();
 
-export default AppContext;
+export default ToogleContext;

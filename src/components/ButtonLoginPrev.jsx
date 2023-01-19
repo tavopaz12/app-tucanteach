@@ -1,7 +1,6 @@
 import React from "react";
 
 function ButtonLoginPrev({ setPage, page }) {
-  // // ----------------------------------------
 
   return (
     <>
@@ -11,7 +10,7 @@ function ButtonLoginPrev({ setPage, page }) {
           setPage(page - 1);
         }}
       >
-        previo
+        Previo
       </button>
     </>
   );

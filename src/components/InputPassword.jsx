@@ -11,19 +11,13 @@ function InputPassword({
   title,
   maxlength,
 }) {
-  // // ----------------------------------------
   const [shown, setShown] = useState(false);
   const switchShown = () => setShown(!shown);
-  // // ----------------------------------------
-
-  // // ----------------------------------------
   const passRegexp = new RegExp(
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$/
   );
-  // // ----------------------------------------
 
   function passValidBlur() {
-    // // ----------------------------------------
     const hasError = !passRegexp.test(formData.password);
 
     setErrors({
@@ -35,8 +29,6 @@ function InputPassword({
       },
     });
   }
-
-  // // ----------------------------------------
 
   return (
     <div className="field">

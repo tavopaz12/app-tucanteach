@@ -1,45 +1,48 @@
 import React from "react";
 
 function ButtonLoginNextIE({ page, setPage, formData }) {
-  // // // ----------------------------------------
-
   const longitudText = 5;
+
+  let nivelSchoolKey = formData.nivelSchool;
+  let nameSchoolKey = formData.nameSchool;
+  let gradeSchoolKey = formData.gradeSchool;
+  let ubicacionSchoolKey = formData.ubicacionSchool;
 
   return (
     <>
       <button
         className="button__login"
         onClick={() => {
-          formData.nivelSchool.trim() === ""
+          nivelSchoolKey.trim() === ""
             ? ""
-            : formData.nameSchool.trim() === ""
+            : nameSchoolKey.trim() === ""
             ? ""
-            : formData.gradeSchool.trim() === ""
+            : gradeSchoolKey.trim() === ""
             ? ""
-            : formData.ubicacionSchool.trim() === ""
+            : ubicacionSchoolKey.trim() === ""
             ? ""
             : setPage(page + 1);
         }}
         style={{
           pointerEvents:
-            formData.nivelSchool === ""
+            nivelSchoolKey === ""
               ? "none"
-              : formData.nameSchool.length <= longitudText
+              : nameSchoolKey.length <= longitudText
               ? "none"
-              : formData.ubicacionSchool.length <= longitudText
+              : ubicacionSchoolKey.length <= longitudText
               ? "none"
-              : formData.gradeSchool === ""
+              : gradeSchoolKey === ""
               ? "none"
               : "visible",
 
           backgroundColor:
-            formData.nivelSchool === ""
+            nivelSchoolKey === ""
               ? "#7a9f6c"
-              : formData.gradeSchool === ""
+              : gradeSchoolKey === ""
               ? "#7a9f6c"
-              : formData.nameSchool.length <= longitudText
+              : nameSchoolKey.length <= longitudText
               ? "#7a9f6c"
-              : formData.ubicacionSchool.length <= longitudText
+              : ubicacionSchoolKey.length <= longitudText
               ? "#7a9f6c"
               : "",
         }}

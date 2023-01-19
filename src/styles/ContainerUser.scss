@@ -20,9 +20,9 @@
   margin-left: 0.3rem;
   color: white;
   font-weight: 900;
-  font-family:var(--font-handlee);
-  letter-spacing: 0.08rem;
-}
+  font-family:var(--font-secondary);
+  text-transform: uppercase;
+} 
 
 @media screen and (max-width: 700px) {
   .container__user__name {

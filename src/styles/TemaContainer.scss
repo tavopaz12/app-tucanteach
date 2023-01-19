@@ -1,14 +1,30 @@
 .container__medioAmbiente__temas {
-  background-color: black;
+  transition: all 0.3s ease;
+  background-color: var(--bg-card-dark);
+  // border-right: 2px solid var(--border-color);
   top: 0;
   position: fixed;
-  width: 25%;
+  width: 20%;
   height: 100vh;
   color: white;
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  animation: fadeIn 1s;
+  animation: fadeIn 0.5s;
+}
+
+.container__medioAmbiente__temas-active {
+  transition: all 0.3s ease;
+  background-color: var(--bg-card-dark);
+  top: 0;
+  position: fixed;
+  width: 20%;
+  height: 100vh;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.5s;
 }
 
 @keyframes fadeIn {
@@ -22,6 +38,8 @@
 
 .container__medioAmbiente__temas__info {
   margin-top: 5rem;
+  color: var(--dark-text-color);
+  font-weight: 500;
 }
 
 .container__medioAmbiente__info {
@@ -37,11 +55,11 @@
 
   p {
     margin-left: 2rem;
-    color: rgb(77, 75, 75);
+    color: var(--subtitule);
   }
 
   .container__medioAmbiente__temas__infoTitle__icon {
-    color: rgb(77, 75, 75);
+    color: var(--subtitule);
   }
 }
 
@@ -51,12 +69,21 @@
   }
 
   li {
+    border-bottom: 1.8px solid var(--border-color);
     padding: 0.8rem;
-    border-bottom: 1.8px solid rgb(70, 68, 68);
-
+    font-weight: 500;
     &:hover {
-      background-color: rgb(44, 43, 43);
+      background-color: var(--temas-hover);
     }
+  }
+
+  .tema__active {
+    color: var(--dark-text-color);
+  }
+
+  .tema__disabled {
+    color: var(--subtitule);
+    pointer-events: none;
   }
 }
 
@@ -69,16 +96,28 @@
   border: none;
   border-radius: 0.3rem;
   padding: 0.3rem;
+  border: 0.1rem solid black;
+
+  &:hover,
+  &:active {
+    background-color: black;
+    color: white;
+    border: 0.1rem solid var(--dark-text-color);
+  }
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 700px) {
   .container__medioAmbiente__temas {
     top: 3.6rem;
+    width: auto;
+    position: sticky;
+  }
+  .container__medioAmbiente__temas-active {
+    top: 1rem;
     width: auto;
     position: sticky;
   }
   .container__medioAmbiente__temas__info {
     margin-top: 1rem;
   }
-  
 }

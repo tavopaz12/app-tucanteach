@@ -3,13 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 function InputEmail({ formData, setFormData, errors, setErrors }) {
-  // // ----------------------------------------
-
   const emailRegexp = new RegExp(
     /[a-zA-Z0-9!#$%&'*_+-]([.]?[a-zA-Z0-9!#$%&'*_+-])+@[a-zA-Z0-9]([^@&%$/()=?¿!.,:;]|d)+[a-zA-Z0-9][.][a-zA-Z]{2,4}([.][a-zA-Z]{2})?/
   );
-
-  // // ----------------------------------------
 
   function emailValidBlur() {
     const hasError = !emailRegexp.test(formData.email);
@@ -18,8 +14,6 @@ function InputEmail({ formData, setFormData, errors, setErrors }) {
       email: { err: hasError, msgErr: "Introduza un correo valido" },
     });
   }
-
-  // // ----------------------------------------
 
   return (
     <div className="field">

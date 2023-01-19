@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useParams, useNavigate, Navigate } from "react-router-dom";
+import { useParams, useNavigate, Navigate, Outlet } from "react-router-dom";
 import Header from "../containers/Header.jsx";
 import HeaderSesion from "../containers/HeaderSesion.jsx";
 import TemasContainer from "../containers/TemasContainer.jsx";
@@ -9,7 +9,14 @@ import NotFound from "./NotFound.jsx";
 import "../styles/MedioAmbienteSesion.scss";
 
 export default function SessionsMedioAmbiente() {
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const [toggleMenu, setToggleMenu] = useState(
+    localStorage.getItem("toogle") === "false" ? false : true
+  );
+  const [pos, setPos] = useState(0);
+
+  window.onscroll = function () {
+    setPos(window.scrollY);
+  };
 
   let params = useParams();
   let curso = getCursoMedioAmbiente(params.cursoId);
@@ -23,12 +30,15 @@ export default function SessionsMedioAmbiente() {
 
   return (
     <>
-      <HeaderSesion toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} />
+      {pos === 0 ? (
+        <HeaderSesion toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} />
+      ) : (
+        ""
+      )}
 
       <div className="conten__sesion__container">
-        {toggleMenu === true ? <TemasContainer /> : ""}
-
-        <TemaSession curso={curso} />
+        {toggleMenu === true ? <TemasContainer pos={pos} /> : ""}
+        <TemaSession isToogle={toggleMenu}></TemaSession>
       </div>
     </>
   );

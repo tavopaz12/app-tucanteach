@@ -63,22 +63,22 @@
     }
   }
 }
-
+ 
 @keyframes colorSlide {
   0% {
-    background-color: #152a68;
+    background-color: var(--bg-color1);
   }
   25% {
-    background-color: royalblue;
+    background-color: var(--bg-color2);
   }
   50% {
-    background-color: seagreen;
+    background-color: var(--bg-color3);
   }
   75% {
-    background-color: tomato;
+    background-color: var(--bg-color4);
   }
   100% {
-    background-color: #152a68;
+    background-color: var(--bg-color5);
   }
 }
 
