@@ -1,0 +1,70 @@
+.profile__container {
+  margin-top: 6.3rem;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6rem;
+  color: var(--dark-text-color);
+}
+
+.perfilUpdate__infoGeneral__section1,
+.perfilUpdate__infoGeneral__section2,
+.perfilUpdate__infoGeneral__section3,
+.perfilUpdate__adress__section1,
+.perfilUpdate__adress__section2 {
+  display: flex;
+  gap: 1rem;
+}
+
+.perfilUpdate__infoGeneral__title,
+.perfilUpdate__adress__title {
+  margin-bottom: 1.2rem;
+  color: var(--dark-text-color);
+}
+
+.perfilUpdate__infoGeneral,
+.perfilUpdate__adress {
+  border: 1px solid var(--border-color);
+  border-radius: 0.3rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.perfilUpdate__infoGeneral__title,
+.perfilUpdate__adress__title {
+  font-weight: bold;
+  font-size: 1.07rem;
+}
+
+.btn__perfilUser {
+  width: 50%;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 0.5rem;
+  background-color: rgb(11, 119, 119);
+  border: none;
+  outline: none;
+  font-size: 0.97rem;
+}
+
+@media screen and (max-width: 700px) {
+  .profile__container {
+    margin-top: 1rem;
+    width: 90%;
+    margin-left: 1.1rem;
+    margin-bottom: 3rem;
+  }
+
+  .perfilUpdate__infoGeneral__section1,
+  .perfilUpdate__infoGeneral__section2,
+  .perfilUpdate__infoGeneral__section3,
+  .perfilUpdate__adress__section1,
+  .perfilUpdate__adress__section2 {
+    display: block;
+  }
+
+  .btn__perfilUser {
+    width: 100%;
+  }
+}

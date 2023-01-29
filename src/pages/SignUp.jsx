@@ -10,6 +10,7 @@ import InformacionBasica from "../containers/InformacionBasica";
 import InformacionEscolar from "../containers/InformacionEscolar";
 import InformacionContacto from "../containers/InformacionContacto";
 import { NavLink } from "react-router-dom";
+import ToastAlert from "../containers/ToastAlert";
 
 function SignUp() {
   const [page, setPage] = useState(0);
@@ -29,10 +30,23 @@ function SignUp() {
     },
   });
 
+  const [show, setshow] = useState(false);
+
+  const showAlert = () => {
+    setshow(true);
+    getCountTimeout();
+  };
+
+  const getCountTimeout = () => {
+    setTimeout(() => {
+      setshow(false);
+    }, 5000);
+  };
+
   const onSubmit = (e) => {
     e.preventDefault();
-
-    console.log(formData);
+    showAlert();
+    
   };
 
   const [formData, setFormData] = useState({
@@ -90,6 +104,8 @@ function SignUp() {
         <div className="bird-container bird-container--one">
           <div className="bird bird--one"></div>
         </div>
+
+        <ToastAlert show={show} success text={"Registro Exitoso"}></ToastAlert>
 
         <div className="steps">
           <p

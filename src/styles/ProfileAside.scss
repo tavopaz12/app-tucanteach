@@ -1,0 +1,47 @@
+.aside__perfilUser {
+  background-color: var(--bg-aside-perfil);
+  width: 20%;
+  height: 100vh;
+  text-align: center;
+  top: 0;
+  font-size: 1.1rem;
+  color: var(--dark-text-color);
+
+  .photo__profile__container {
+    margin-top: 7rem;
+
+    .photo__profile {
+      width: 150px;
+      height: 150px;
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      border-radius: 150px;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .aside__perfilUser__userName {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .location__container {
+    display: flex;
+    gap: 1.7rem;
+    justify-content: center;
+    margin-top: 0.8rem;
+    margin-left: -2rem;
+
+    .location__container__icon {
+      color: var(--dark-text-color);
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .aside__perfilUser {
+    margin-top: -0.5rem;
+    height: auto;
+    background-color: transparent;
+    width: 100%;
+  }
+}

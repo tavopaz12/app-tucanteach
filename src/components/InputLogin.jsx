@@ -1,6 +1,18 @@
 import React from "react";
 
-function InputLogin({ titleLabel, icon, ...props }) {
+function InputLogin({
+  titleLabel,
+  icon,
+  inputType,
+  placeholder,
+  value,
+  onChange,
+  onBlur,
+  pattern,
+  minlength,
+  maxlength,
+  title,
+}) {
   return (
     <div className="field">
       <p className="field__title">{titleLabel}:</p>

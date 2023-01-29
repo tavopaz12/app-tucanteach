@@ -1,12 +1,17 @@
 import React from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import Header from "../containers/Header";
+import ProfileAside from "../containers/ProfileAside";
+import ProfileContainer from "../containers/ProfileContainer";
 import { getUser } from "../hooks/useGetUsers";
 import NotFound from "./NotFound";
 
+import "../styles/PerfilUser.scss";
+
 export default function PerfilUser() {
   let params = useParams();
-  let navigate = useNavigate();
   let user = getUser(params.userId);
+
   if (!user)
     return (
       <NotFound
@@ -14,7 +19,16 @@ export default function PerfilUser() {
         to={"/"}
       />
     );
-  return (<>
-  <h1>Hola mi nombre es {user.name}</h1>
-  </>);
+
+  return (
+    <>
+      <div className="header__perfilUser">
+        <Header></Header>
+      </div>
+      <section className="container__perfilUser">
+        <ProfileAside></ProfileAside>
+        <ProfileContainer></ProfileContainer>
+      </section>
+    </>
+  );
 }

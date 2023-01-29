@@ -1,0 +1,17 @@
+.input__date[type="date"]{
+    background-color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    color: black;
+    border: 1px solid rgba(0,0,0,0.5);
+    font-size: 0.9rem;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+::-webkit-calendar-picker-indicator{
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}

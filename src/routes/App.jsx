@@ -18,8 +18,8 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Mantenimiento />} />
-      <Route path="home" element={<Home />} />
+      <Route path="/" element={<Home />} />
+      <Route path="mantenimiento" element={<Mantenimiento />} />
       <Route path="registro" element={<SignUp />} />
       <Route path="login" element={<Login />} />
       <Route path="user/:userId" element={<PerfilUser />} />

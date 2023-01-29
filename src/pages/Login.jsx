@@ -31,6 +31,7 @@ function Login() {
     e.preventDefault();
 
     console.log(formData);
+
   };
 
   return (
@@ -75,7 +76,7 @@ function Login() {
             <BtnSendForm
               formData={formData}
               errors={errors}
-              titleBtn={"Login"}
+              titleBtn={"Acceder"}
             />
           </center>
         </form>
@@ -84,9 +85,8 @@ function Login() {
         <br />
         <div>
           <p href="" className="create__account">
-            Aun no tengo una cuenta!{" "}
             <NavLink to="/registro" className="create__account--link">
-              Registrarme!
+              Crear una cuenta nueva!
             </NavLink>
           </p>
         </div>

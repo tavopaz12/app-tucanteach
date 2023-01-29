@@ -1,0 +1,18 @@
+.selectField {
+  width: 100%;
+  border: 1px solid rgba(27, 27, 27, 0.5);
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  outline: none;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.selectField:focus {
+  border: 1px solid rgba(27, 27, 27, 1);
+}
+
+.selectField__option {
+  background-color: black;
+  color: white;
+}

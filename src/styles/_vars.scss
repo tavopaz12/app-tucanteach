@@ -27,6 +27,7 @@ html {
   --hospital-green: #94820d;
   --bg-sesions: white;
   --bg-card-dark: white;
+  --bg-aside-perfil: rgb(221, 236, 205);
 
   /* TITLE */
   --title-color: #333;
@@ -47,16 +48,11 @@ html {
   --border-color: #afb6b6;
 
   /* COLOR SLIDE */
-  --bg-color1: #F56701;
-  --bg-color2: #F4D100;
-  --bg-color3: #F3F400;
-  --bg-color4: #91B70C;
+  --bg-color1: #f56701;
+  --bg-color2: #f4d100;
+  --bg-color3: #f3f400;
+  --bg-color4: #91b70c;
   --bg-color5: #309300;
-
-  /* #008f6f
-   #1ca381
-   --dark-primary-color: #165305;
-  */
 }
 
 html[data-theme="dark"] {
@@ -76,6 +72,7 @@ html[data-theme="dark"] {
   --hospital-green: #031742;
   --bg-sesions: rgb(19, 18, 18);
   --bg-card-dark: black;
+  --bg-aside-perfil: rgb(37, 37, 36);
 
   /* TITLE */
   --title-color: white;
@@ -100,7 +97,7 @@ html[data-theme="dark"] {
   --bg-color2: #600171;
   --bg-color3: #bb0061;
   --bg-color4: #f5025b;
-  --bg-color5: #F40000;
+  --bg-color5: #f40000;
 
   /* #008f6f
    #1ca381
