@@ -12,20 +12,8 @@ export default function TemasContainer({ pos }) {
   const actividades = getActividadesMedioAmbiente();
 
   return (
-    <section
-      className={
-        pos === 0
-          ? "container__medioAmbiente__temas"
-          : "container__medioAmbiente__temas-active"
-      }
-    >
-      <div
-        className={
-          pos === 0
-            ? "container__medioAmbiente__temas__info"
-            : "container__medioAmbiente__temas__info-active"
-        }
-      >
+    <section className="container__medioAmbiente__temas">
+      <div className="container__medioAmbiente__temas__info-active">
         <button
           onClick={() => {
             navigate("/medio-ambiente");

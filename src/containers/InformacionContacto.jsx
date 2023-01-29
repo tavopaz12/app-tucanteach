@@ -2,7 +2,7 @@ import React from "react";
 
 // // ----------------------------------------
 import ButtonLoginPrev from "../components/ButtonLoginPrev";
-import InputLogin from "../components/inputLogin";
+import InputLogin from "../components/inputLogin.jsx";
 import InputEmail from "../components/InputEmail";
 import InputPassword from "../components/InputPassword";
 import BtnSendForm from "../components/BtnSendForm";

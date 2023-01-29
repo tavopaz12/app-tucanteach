@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // ESTILOS
-import "../styles/Login/Login.scss";
+
 import "../styles/Login/InputLogin.scss";
 import "../styles/Login/ButtonLogin.scss";
 import "../styles/Login/Login.scss";
@@ -45,8 +45,8 @@ function SignUp() {
 
   const onSubmit = (e) => {
     e.preventDefault();
+    console.log(formData)
     showAlert();
-    
   };
 
   const [formData, setFormData] = useState({

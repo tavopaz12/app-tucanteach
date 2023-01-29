@@ -1,5 +1,5 @@
 import React from "react";
-import InputLogin from "../components/inputLogin";
+import InputLogin from "../components/inputLogin.jsx";
 import ButtonLoginNextIB from "../components/ButtonLoginNextIB";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

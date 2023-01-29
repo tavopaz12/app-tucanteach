@@ -1,8 +1,7 @@
 .container__medioAmbiente__temas {
-  transition: all 0.3s ease;
   background-color: var(--bg-card-dark);
   // border-right: 2px solid var(--border-color);
-  top: 0;
+  top: 10;
   position: fixed;
   width: 20%;
   height: 100vh;
@@ -14,7 +13,6 @@
 }
 
 .container__medioAmbiente__temas-active {
-  transition: all 0.3s ease;
   background-color: var(--bg-card-dark);
   top: 0;
   position: fixed;
@@ -24,7 +22,6 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  animation: fadeIn 0.5s;
 }
 
 @keyframes fadeIn {

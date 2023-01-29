@@ -18,7 +18,11 @@ function InputSelect({ titleLabel, options, icon, onChange, nameValue }) {
           }}
         >
           <option disabled>-- Selecciona una opción --</option>
-          {options}
+          {options.map((item) => (
+            <option key={item} value={item}>
+              {item}
+            </option>
+          ))}
         </select>
       </div>
     </div>

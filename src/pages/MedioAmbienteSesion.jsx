@@ -30,11 +30,7 @@ export default function SessionsMedioAmbiente() {
 
   return (
     <>
-      {pos === 0 ? (
-        <HeaderSesion toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} />
-      ) : (
-        ""
-      )}
+      <HeaderSesion toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} />
 
       <div className="conten__sesion__container">
         {toggleMenu === true ? <TemasContainer pos={pos} /> : ""}

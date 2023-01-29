@@ -12,7 +12,7 @@ export default function SelectField({ options }) {
         {options.map((item) => (
           <option key={item} className="selectField__option" value={item}>
             {item}
-          </option>
+          </option> 
         ))}
       </select>
     </>

@@ -1,7 +1,7 @@
 import React from "react";
 
 // // ----------------------------------------
-import InputLogin from "../components/inputLogin";
+import InputLogin from "../components/inputLogin.jsx";
 import ButtonLoginPrev from "../components/ButtonLoginPrev";
 import InputSelect from "../components/InputSelect";
 import ButtonLoginNextIE from "../components/ButtonLoginNextIE";
@@ -18,8 +18,6 @@ import {
 function InformacionEscolar({ page, setPage, formData, setFormData }) {
   return (
     <>
-      {/* <h2 className="title__category">Informacion Escolar</h2> */}
-
       <InputSelect
         titleLabel={
           formData.nivelSchool === ""
@@ -29,12 +27,7 @@ function InformacionEscolar({ page, setPage, formData, setFormData }) {
         icon={
           <FontAwesomeIcon icon={faSchoolCircleCheck} className="icon-select" />
         }
-        options={
-          <>
-            <option value={"Primaria"}>Primaria</option>
-            <option value={"Secundaria"}>Secundaria</option>
-          </>
-        }
+        options={["Primaria", "Secundaria"]}
         nameValue={formData.nivelSchool}
         onChange={(e) =>
           setFormData({ ...formData, nivelSchool: e.target.value })
@@ -65,16 +58,7 @@ function InformacionEscolar({ page, setPage, formData, setFormData }) {
             className="icon-select"
           />
         }
-        options={
-          <>
-            <option value={"Primero"}>Primero</option>
-            <option value={"Segundo"}>Segundo</option>
-            <option value={"Tercero"}>Tercero</option>
-            <option value={"Cuarto"}>Cuarto</option>
-            <option value={"Quinto"}>Quinto</option>
-            <option value={"Sexto"}>Sexto</option>
-          </>
-        }
+        options={["Primero", "Segundo", "Tercero", "Cuarto", "Quinto", "Sexto"]}
         nameValue={formData.gradeSchool}
         onChange={(e) =>
           setFormData({ ...formData, gradeSchool: e.target.value })
