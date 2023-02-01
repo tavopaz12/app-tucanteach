@@ -2,21 +2,18 @@ import React, { useState } from "react";
 import "../styles/Home.scss";
 import Header from "../containers/Header";
 import CardSection from "../containers/CardSection";
-import PreLoaderTetris from "../components/PreLoaderTetris";
-import PreLoader from "../components/PreLoader";
+import { getUsers } from "../hooks/user.service";
+import PreLoader from "./../components/PreLoader";
+
+const API = "http://localhost:3000/api/v1/user";
 
 function Home() {
-  const [hidePreloader, sethidePreloader] = useState(false);
+  const users = getUsers(API);
+  console.log(users.loading);
 
-  const getCountTimeout = () => {
-    setTimeout(() => {
-      sethidePreloader(true);
-    }, 5000);
-  };
-
-  getCountTimeout();
   return (
     <>
+      {users.loading ? <PreLoader /> : null}
       <div className="bg__home"></div>
 
       <div className="home__container">
