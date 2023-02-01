@@ -1,9 +1,12 @@
 import React, { useState } from "react";
-import "../styles/Home.scss";
+
 import Header from "../containers/Header";
 import CardSection from "../containers/CardSection";
+import PreLoaderTetris from "./../components/PreLoaderTetris";
+
 import { getUsers } from "../hooks/user.service";
-import PreLoader from "./../components/PreLoader";
+
+import "../styles/Home.scss";
 
 const API = "http://localhost:3000/api/v1/user";
 
@@ -13,7 +16,7 @@ function Home() {
 
   return (
     <>
-      {users.loading ? <PreLoader /> : null}
+      {users.loading ? <PreLoaderTetris /> : null}
       <div className="bg__home"></div>
 
       <div className="home__container">
